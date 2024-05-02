@@ -46,7 +46,7 @@ Save the secret and don't expose it!
 - Go to the Authentication tab and paste your GitHub token in Bearer Token
 - Add 'https://api.github.com' as allowed hosts
 - Click Save and Test
-- Navigate to the left hand menu ---> Dashboards ---> New ----> Import ----> Paste/Upload the copilotmetrics.json contents into the screen
+- Navigate to the left hand menu ---> Dashboards ---> New ----> Import ----> Paste/Upload the copilotsample.json contents into the screen
 - Select the Data source you created earlier
 - VOILA! Your dashboard is here
 
