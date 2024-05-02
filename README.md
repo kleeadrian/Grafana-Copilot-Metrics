@@ -3,6 +3,8 @@
 
 This is a personal project where I've developed a sample dashboard in Grafana Cloud to help teams and companies visualise GitHub copilot metrics within Grafana via the [Copilot API](https://docs.github.com/en/rest/copilot/copilot-usage?apiVersion=2022-11-28). Feel free to make suggestions in the Issues tab and get in contact via [Contact Info](#contact-info)
 
+TLDR; I queried the json response from the Copilot API endpoint and used Grafana to massage the data.
+
 
 
 <img width="1255" alt="image" src="https://github.com/kleeadrian/Grafana-CopilotMetrics/assets/22606299/594b6b00-aa57-416b-9ba2-ed4f81b69cf3">
