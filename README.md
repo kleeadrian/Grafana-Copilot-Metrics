@@ -1,6 +1,7 @@
-# Grafana and Copilot Metrics Dashboard
 
-This is a personal project where I've developed a sample dashboard in Grafana Cloud to help teams and companies visualise GitHub copilot metrics within Grafana via the [Copilot API](https://docs.github.com/en/rest/copilot/copilot-usage?apiVersion=2022-11-28)
+## Grafana and Copilot Metrics Dashboard
+
+This is a personal project where I've developed a sample dashboard in Grafana Cloud to help teams and companies visualise GitHub copilot metrics within Grafana via the [Copilot API](https://docs.github.com/en/rest/copilot/copilot-usage?apiVersion=2022-11-28). Feel free to make suggestions in the Issues tab and get in contact via [Contact Info](#contact-info)
 
 
 
@@ -50,7 +51,8 @@ Save the secret and don't expose it!
 - Select the Data source you created earlier
 - VOILA! Your dashboard is here
 
-**Note:** You'll need to change the URL of each panel to the specified API endpoints using the token generated. Do this by going to the top right hand corner of each Panel --> Edit --> change URL... or follow the instructions under the JSON subheading
+**Note:** You'll need to change the URL of each panel to the specified API endpoints above. Do this by going to the top right hand corner of each Panel --> Edit --> change URL... or follow the instructions under the JSON template edit subheading
+
 <img width="352" alt="image" src="https://github.com/kleeadrian/Grafana-CopilotMetrics/assets/22606299/1adb9bf5-5b06-4198-8dfb-e38ed1c9849a">
 
 ### Json template edits
@@ -73,8 +75,14 @@ Change the URL's in the following lines to your [Enterprise API Endpoint](https:
 1290
 ```
 
+Metrics ideas obtained from https://resources.github.com/learn/pathways/copilot/essentials/measuring-the-impact-of-github-copilot/ 
 
+Shoutout to @andrekolodockha and @benksmilie for the ideas
 
+# Contact Info
+Feel free to contact me to discuss any issues, questions, or comments.
+
+My contact info can be found on my GitHub page.
 
 
 
