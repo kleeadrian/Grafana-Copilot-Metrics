@@ -59,7 +59,7 @@ Save the secret and don't expose it!
 
 ### Json template edits
 The current .json file contains the template of the dashboard. It uses test sample data(same as the GitHub API response) which I've exported into a .json file which is located in the dummydata folder. 
-The following lines of code are the ones that need to be changed to your Enterprise/Organisation API Endpoint
+The following lines of code are the ones that need to be changed in the .json file to your Enterprise/Organisation API Endpoint
 
 Change the URL's in the following lines to your [Organisation API Endpoint](https://docs.github.com/en/rest/copilot/copilot-user-management?apiVersion=2022-11-28)
 ```
