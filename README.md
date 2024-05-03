@@ -62,7 +62,7 @@ Save the secret and don't expose it!
 
 Metrics ideas obtained from https://resources.github.com/learn/pathways/copilot/essentials/measuring-the-impact-of-github-copilot/ 
 
-Shoutout to @andrekolodochka and @benksmilie for the ideas
+Shoutout to @andrekolodochka and @benksmillie for the ideas
 
 # Contact Info
 Feel free to contact me to discuss any issues, questions, or comments.
