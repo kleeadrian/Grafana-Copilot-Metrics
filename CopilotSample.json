@@ -45,7 +45,7 @@
       "type": "datasource",
       "id": "yesoreyeram-infinity-datasource",
       "name": "Infinity",
-      "version": "2.4.0"
+      "version": "2.6.3"
     }
   ],
   "annotations": {
@@ -159,7 +159,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://raw.githubusercontent.com/kleeadrian/Grafana-CopilotMetrics/main/dummydata/copilotusersapi.json",
+          "url": "https://api.github.com/orgs/your_org/copilot/billing",
           "url_options": {
             "data": "",
             "headers": [],
@@ -251,7 +251,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://raw.githubusercontent.com/kleeadrian/Grafana-CopilotMetrics/main/dummydata/Copilotdataapi.json",
+          "url": "https://api.github.com/enterprises/your_enterprise/copilot/usage",
           "url_options": {
             "data": "",
             "method": "GET"
@@ -410,7 +410,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://raw.githubusercontent.com/kleeadrian/Grafana-CopilotMetrics/main/dummydata/copilotusersapi.json",
+          "url": "https://api.github.com/orgs/your_org/copilot/billing",
           "url_options": {
             "data": "",
             "headers": [],
@@ -533,7 +533,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://raw.githubusercontent.com/kleeadrian/Grafana-CopilotMetrics/main/dummydata/Copilotdataapi.json",
+          "url": "https://api.github.com/enterprises/your-enterprise/copilot/usage",
           "url_options": {
             "data": "",
             "method": "GET"
@@ -682,7 +682,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://raw.githubusercontent.com/kleeadrian/Grafana-CopilotMetrics/main/dummydata/Copilotdataapi.json",
+          "url": "https://api.github.com/enterprises/your-enterprise/copilot/usage",
           "url_options": {
             "data": "",
             "method": "GET"
@@ -828,7 +828,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://raw.githubusercontent.com/kleeadrian/Grafana-CopilotMetrics/main/dummydata/Copilotdataapi.json",
+          "url": "https://api.github.com/enterprises/your-enterprise/copilot/usage",
           "url_options": {
             "data": "",
             "method": "GET"
@@ -995,7 +995,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://raw.githubusercontent.com/kleeadrian/Grafana-CopilotMetrics/main/dummydata/Copilotdataapi.json",
+          "url": "https://api.github.com/enterprises/your-enterprise/copilot/usage",
           "url_options": {
             "data": "",
             "method": "GET"
@@ -1104,7 +1104,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -1167,7 +1168,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://raw.githubusercontent.com/kleeadrian/Grafana-CopilotMetrics/main/dummydata/Copilotdataapi.json",
+          "url": "https://api.github.com/enterprises/your-enterprise/copilot/usage",
           "url_options": {
             "data": "",
             "method": "GET"
@@ -1224,7 +1225,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -1287,7 +1289,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://raw.githubusercontent.com/kleeadrian/Grafana-CopilotMetrics/main/dummydata/Copilotdataapi.json",
+          "url": "https://api.github.com/enterprises/your-enterprise/copilot/usage",
           "url_options": {
             "data": "",
             "method": "GET"
@@ -1305,14 +1307,14 @@
     "list": []
   },
   "time": {
-    "from": "now-6h",
-    "to": "now"
+    "from": "2024-04-06T00:00:00.000Z",
+    "to": "2024-05-02T00:00:00.000Z"
   },
   "timeRangeUpdatedDuringEditOrView": false,
   "timepicker": {},
   "timezone": "browser",
-  "title": "Co-pilot Sample",
+  "title": "Copilot Dashboard",
   "uid": "bdk9wxug71ptsd",
-  "version": 40,
+  "version": 3,
   "weekStart": ""
 }
