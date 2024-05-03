@@ -110,7 +110,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://api.github.com/orgs/octodemo/copilot/billing",
+          "url": "https://api.github.com/orgs/your-org/copilot/billing",
           "url_options": {
             "data": "",
             "headers": [],
@@ -202,7 +202,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://api.github.com/enterprises/octodemo/copilot/usage",
+          "url": "https://api.github.com/enterprises/your-enterprise/copilot/usage",
           "url_options": {
             "data": "",
             "method": "GET"
@@ -361,7 +361,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://api.github.com/orgs/octodemo/copilot/billing",
+          "url": "https://api.github.com/orgs/your-org/copilot/billing",
           "url_options": {
             "data": "",
             "headers": [],
@@ -484,7 +484,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://api.github.com/enterprises/octodemo/copilot/usage",
+          "url": "https://api.github.com/enterprises/your-enterprise/copilot/usage",
           "url_options": {
             "data": "",
             "method": "GET"
@@ -633,7 +633,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://api.github.com/enterprises/octodemo/copilot/usage",
+          "url": "https://api.github.com/enterprises/your-enterprise/copilot/usage",
           "url_options": {
             "data": "",
             "method": "GET"
@@ -779,7 +779,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://api.github.com/enterprises/octodemo/copilot/usage",
+          "url": "https://api.github.com/enterprises/your-enterprise/copilot/usage",
           "url_options": {
             "data": "",
             "method": "GET"
@@ -946,7 +946,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://api.github.com/enterprises/octodemo/copilot/usage",
+          "url": "https://api.github.com/enterprises/your-enterprise/copilot/usage",
           "url_options": {
             "data": "",
             "method": "GET"
@@ -1119,7 +1119,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://api.github.com/enterprises/octodemo/copilot/usage",
+          "url": "https://api.github.com/enterprises/your-enterprise/copilot/usage",
           "url_options": {
             "data": "",
             "method": "GET"
@@ -1240,7 +1240,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://api.github.com/enterprises/octodemo/copilot/usage",
+          "url": "https://api.github.com/enterprises/your-enterprise/copilot/usage",
           "url_options": {
             "data": "",
             "method": "GET"
