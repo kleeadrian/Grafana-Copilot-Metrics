@@ -133,15 +133,19 @@
           },
           "mappings": [],
           "thresholds": {
-            "mode": "percentage",
+            "mode": "absolute",
             "steps": [
               {
-                "color": "green",
+                "color": "red",
                 "value": null
               },
               {
                 "color": "orange",
-                "value": 20
+                "value": 18
+              },
+              {
+                "color": "green",
+                "value": 25
               }
             ]
           },
@@ -285,15 +289,19 @@
           },
           "mappings": [],
           "thresholds": {
-            "mode": "percentage",
+            "mode": "absolute",
             "steps": [
               {
-                "color": "green",
+                "color": "red",
                 "value": null
               },
               {
-                "color": "#EAB839",
+                "color": "orange",
                 "value": 20
+              },
+              {
+                "color": "green",
+                "value": 30
               }
             ]
           },
@@ -1176,8 +1184,7 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green",
-                "value": null
+                "color": "green"
               },
               {
                 "color": "red",
@@ -1258,14 +1265,14 @@
     "list": []
   },
   "time": {
-    "from": "2024-04-06T00:00:00.000Z",
-    "to": "2024-05-02T00:00:00.000Z"
+    "from": "now-6h",
+    "to": "now"
   },
   "timeRangeUpdatedDuringEditOrView": false,
   "timepicker": {},
   "timezone": "browser",
   "title": "Copilot Dashboard",
   "uid": "bdk9wxug71ptsd",
-  "version": 4,
+  "version": 5,
   "weekStart": ""
 }
