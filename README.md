@@ -77,6 +77,14 @@ Change the URL's in the following lines to your [Enterprise API Endpoint](https:
 1290
 ```
 
+
+### CoPilot Templates with GitHub API URLs
+Just import CopilotTemplate.json and set defaults for the variables:
+- enterpriseName
+- orgName
+
+
+
 Metrics ideas obtained from https://resources.github.com/learn/pathways/copilot/essentials/measuring-the-impact-of-github-copilot/ 
 
 Shoutout to @andrekolodockha and @benksmilie for the ideas
