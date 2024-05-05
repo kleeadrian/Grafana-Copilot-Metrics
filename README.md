@@ -60,6 +60,14 @@ Save the secret and don't expose it!
 <img width="352" alt="image" src="https://github.com/kleeadrian/Grafana-CopilotMetrics/assets/22606299/1adb9bf5-5b06-4198-8dfb-e38ed1c9849a">
 
 
+
+### CoPilot Templates with GitHub API URLs
+Just import CopilotTemplate.json and set defaults for the variables:
+- enterpriseName
+- orgName
+
+
+
 Metrics ideas obtained from https://resources.github.com/learn/pathways/copilot/essentials/measuring-the-impact-of-github-copilot/ 
 
 Shoutout to @andrekolodochka and @benksmillie for the ideas
