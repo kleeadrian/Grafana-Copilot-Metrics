@@ -49,13 +49,13 @@ Save the secret and don't expose it!
 - Go to the Authentication tab and paste your GitHub token in Bearer Token
 - Add 'https://api.github.com' as allowed hosts
 - Click Save and Test
-- Open copilotsample.json file and replace all occurences of `your-org` and `your-enterprise` with your GitHub organisation and eneterprise name
+- Open copilotsample.json file and replace all occurences of `your-org` and `your-enterprise` with your GitHub organisation and enterprise name
 - Navigate to the left hand menu ---> Dashboards ---> New ----> Import
 - Paste the contents of copilotsample.json into the screen. Alternatively, upload the whole file
 - Select the Data source you created earlier
 - VOILA! Your dashboard is here
 
-**Note:** If you haven't updated `your-org` and `your-enterprise` with your GitHub organisation and eneterprise name earlier, you'll need to change the URL of each panel to the relevant API endpoints above. Do this by going to the top right hand corner of each Panel --> Edit --> change URL... or follow the instructions under the JSON template edit subheading
+**Note:** If you haven't updated `your-org` and `your-enterprise` with your GitHub organisation and enterprise name earlier, you'll need to change the URL of each panel to the relevant API endpoints above. Do this by going to the top right hand corner of each Panel --> Edit --> change URL... or follow the instructions under the JSON template edit subheading
 
 <img width="352" alt="image" src="https://github.com/kleeadrian/Grafana-CopilotMetrics/assets/22606299/1adb9bf5-5b06-4198-8dfb-e38ed1c9849a">
 
