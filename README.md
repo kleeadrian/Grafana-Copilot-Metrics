@@ -5,7 +5,7 @@ This is a personal project where I've developed a sample dashboard in Grafana Cl
 
 TLDR; I queried the json response from the Copilot API endpoint and used Grafana to massage the data.
 
-As the Copilot endpoint data is only relevant for 28 days. You can use [Recorded Queries](https://grafana.com/docs/grafana/latest/administration/recorded-queries/) to store the API response in the Grafana Cloud hosted prometheus. 
+As the Copilot endpoint data is only relevant for 28 days. You can use [Recorded Queries](https://grafana.com/docs/grafana/latest/administration/recorded-queries/) to store the API response in the Grafana Cloud hosted prometheus(Only available in cloud + Grafana Enterprise self hosted)
 #### Sample Screenshot
 <img width="1255" alt="image" src="https://github.com/kleeadrian/Grafana-CopilotMetrics/assets/22606299/594b6b00-aa57-416b-9ba2-ed4f81b69cf3">
 
