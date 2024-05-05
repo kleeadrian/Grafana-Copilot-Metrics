@@ -1,53 +1,4 @@
 {
-  "__inputs": [
-    {
-      "name": "DS_GITHUB_COPILOT",
-      "label": "GitHub Copilot",
-      "description": "",
-      "type": "datasource",
-      "pluginId": "yesoreyeram-infinity-datasource",
-      "pluginName": "Infinity"
-    }
-  ],
-  "__elements": {},
-  "__requires": [
-    {
-      "type": "panel",
-      "id": "bargauge",
-      "name": "Bar gauge",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "gauge",
-      "name": "Gauge",
-      "version": ""
-    },
-    {
-      "type": "grafana",
-      "id": "grafana",
-      "name": "Grafana",
-      "version": "11.1.0-69950"
-    },
-    {
-      "type": "panel",
-      "id": "stat",
-      "name": "Stat",
-      "version": ""
-    },
-    {
-      "type": "panel",
-      "id": "timeseries",
-      "name": "Time series",
-      "version": ""
-    },
-    {
-      "type": "datasource",
-      "id": "yesoreyeram-infinity-datasource",
-      "name": "Infinity",
-      "version": "2.4.0"
-    }
-  ],
   "annotations": {
     "list": [
       {
@@ -67,13 +18,13 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": null,
+  "id": 12,
   "links": [],
   "panels": [
     {
       "datasource": {
         "type": "yesoreyeram-infinity-datasource",
-        "uid": "${DS_GITHUB_COPILOT}"
+        "uid": "edkjwc7dq7qiod"
       },
       "fieldConfig": {
         "defaults": {
@@ -150,7 +101,7 @@
           "data": "",
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
-            "uid": "${DS_GITHUB_COPILOT}"
+            "uid": "edkjwc7dq7qiod"
           },
           "filters": [],
           "format": "table",
@@ -159,7 +110,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://raw.githubusercontent.com/kleeadrian/Grafana-CopilotMetrics/main/dummydata/copilotusersapi.json",
+          "url": "https://api.github.com/orgs/your-org/copilot/billing",
           "url_options": {
             "data": "",
             "headers": [],
@@ -173,13 +124,16 @@
     {
       "datasource": {
         "type": "yesoreyeram-infinity-datasource",
-        "uid": "${DS_GITHUB_COPILOT}"
+        "uid": "edkjwc7dq7qiod"
       },
       "fieldConfig": {
         "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
           "mappings": [],
           "thresholds": {
-            "mode": "percentage",
+            "mode": "absolute",
             "steps": [
               {
                 "color": "red",
@@ -187,11 +141,11 @@
               },
               {
                 "color": "orange",
-                "value": 70
+                "value": 18
               },
               {
                 "color": "green",
-                "value": 85
+                "value": 25
               }
             ]
           },
@@ -207,17 +161,18 @@
       },
       "id": 7,
       "options": {
-        "minVizHeight": 75,
-        "minVizWidth": 75,
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
           "calcs": [],
           "fields": "",
           "values": true
         },
-        "showThresholdLabels": false,
-        "showThresholdMarkers": true,
-        "sizing": "auto"
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
       },
       "pluginVersion": "11.1.0-69950",
       "targets": [
@@ -242,7 +197,7 @@
           "data": "",
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
-            "uid": "${DS_GITHUB_COPILOT}"
+            "uid": "edkjwc7dq7qiod"
           },
           "filters": [],
           "format": "table",
@@ -251,7 +206,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://raw.githubusercontent.com/kleeadrian/Grafana-CopilotMetrics/main/dummydata/Copilotdataapi.json",
+          "url": "https://api.github.com/enterprises/your-enterprise/copilot/usage",
           "url_options": {
             "data": "",
             "method": "GET"
@@ -320,18 +275,21 @@
           }
         }
       ],
-      "type": "gauge"
+      "type": "stat"
     },
     {
       "datasource": {
         "type": "yesoreyeram-infinity-datasource",
-        "uid": "${DS_GITHUB_COPILOT}"
+        "uid": "edkjwc7dq7qiod"
       },
       "fieldConfig": {
         "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
           "mappings": [],
           "thresholds": {
-            "mode": "percentage",
+            "mode": "absolute",
             "steps": [
               {
                 "color": "red",
@@ -339,11 +297,11 @@
               },
               {
                 "color": "orange",
-                "value": 70
+                "value": 20
               },
               {
                 "color": "green",
-                "value": 85
+                "value": 30
               }
             ]
           },
@@ -359,8 +317,9 @@
       },
       "id": 6,
       "options": {
-        "minVizHeight": 75,
-        "minVizWidth": 75,
+        "colorMode": "value",
+        "graphMode": "area",
+        "justifyMode": "auto",
         "orientation": "auto",
         "reduceOptions": {
           "calcs": [
@@ -369,9 +328,9 @@
           "fields": "",
           "values": false
         },
-        "showThresholdLabels": false,
-        "showThresholdMarkers": true,
-        "sizing": "auto"
+        "showPercentChange": false,
+        "textMode": "auto",
+        "wideLayout": true
       },
       "pluginVersion": "11.1.0-69950",
       "targets": [
@@ -401,7 +360,7 @@
           "data": "",
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
-            "uid": "${DS_GITHUB_COPILOT}"
+            "uid": "edkjwc7dq7qiod"
           },
           "filters": [],
           "format": "table",
@@ -410,7 +369,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://raw.githubusercontent.com/kleeadrian/Grafana-CopilotMetrics/main/dummydata/copilotusersapi.json",
+          "url": "https://api.github.com/orgs/your-org/copilot/billing",
           "url_options": {
             "data": "",
             "headers": [],
@@ -452,12 +411,12 @@
           }
         }
       ],
-      "type": "gauge"
+      "type": "stat"
     },
     {
       "datasource": {
         "type": "yesoreyeram-infinity-datasource",
-        "uid": "${DS_GITHUB_COPILOT}"
+        "uid": "edkjwc7dq7qiod"
       },
       "fieldConfig": {
         "defaults": {
@@ -524,7 +483,7 @@
           "data": "",
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
-            "uid": "${DS_GITHUB_COPILOT}"
+            "uid": "edkjwc7dq7qiod"
           },
           "filters": [],
           "format": "table",
@@ -533,7 +492,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://raw.githubusercontent.com/kleeadrian/Grafana-CopilotMetrics/main/dummydata/Copilotdataapi.json",
+          "url": "https://api.github.com/enterprises/your-enterprise/copilot/usage",
           "url_options": {
             "data": "",
             "method": "GET"
@@ -606,7 +565,7 @@
     {
       "datasource": {
         "type": "yesoreyeram-infinity-datasource",
-        "uid": "${DS_GITHUB_COPILOT}"
+        "uid": "edkjwc7dq7qiod"
       },
       "fieldConfig": {
         "defaults": {
@@ -673,7 +632,7 @@
           "data": "",
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
-            "uid": "${DS_GITHUB_COPILOT}"
+            "uid": "edkjwc7dq7qiod"
           },
           "filters": [],
           "format": "table",
@@ -682,7 +641,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://raw.githubusercontent.com/kleeadrian/Grafana-CopilotMetrics/main/dummydata/Copilotdataapi.json",
+          "url": "https://api.github.com/enterprises/your-enterprise/copilot/usage",
           "url_options": {
             "data": "",
             "method": "GET"
@@ -720,7 +679,7 @@
     {
       "datasource": {
         "type": "yesoreyeram-infinity-datasource",
-        "uid": "${DS_GITHUB_COPILOT}"
+        "uid": "edkjwc7dq7qiod"
       },
       "fieldConfig": {
         "defaults": {
@@ -819,7 +778,7 @@
           "data": "",
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
-            "uid": "${DS_GITHUB_COPILOT}"
+            "uid": "edkjwc7dq7qiod"
           },
           "filters": [],
           "format": "table",
@@ -828,7 +787,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://raw.githubusercontent.com/kleeadrian/Grafana-CopilotMetrics/main/dummydata/Copilotdataapi.json",
+          "url": "https://api.github.com/enterprises/your-enterprise/copilot/usage",
           "url_options": {
             "data": "",
             "method": "GET"
@@ -893,7 +852,7 @@
     {
       "datasource": {
         "type": "yesoreyeram-infinity-datasource",
-        "uid": "${DS_GITHUB_COPILOT}"
+        "uid": "edkjwc7dq7qiod"
       },
       "fieldConfig": {
         "defaults": {
@@ -986,7 +945,7 @@
           "data": "",
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
-            "uid": "${DS_GITHUB_COPILOT}"
+            "uid": "edkjwc7dq7qiod"
           },
           "filters": [],
           "format": "table",
@@ -995,7 +954,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://raw.githubusercontent.com/kleeadrian/Grafana-CopilotMetrics/main/dummydata/Copilotdataapi.json",
+          "url": "https://api.github.com/enterprises/your-enterprise/copilot/usage",
           "url_options": {
             "data": "",
             "method": "GET"
@@ -1060,7 +1019,7 @@
     {
       "datasource": {
         "type": "yesoreyeram-infinity-datasource",
-        "uid": "${DS_GITHUB_COPILOT}"
+        "uid": "edkjwc7dq7qiod"
       },
       "fieldConfig": {
         "defaults": {
@@ -1104,7 +1063,8 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "green"
+                "color": "green",
+                "value": null
               },
               {
                 "color": "red",
@@ -1158,7 +1118,7 @@
           "data": "",
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
-            "uid": "${DS_GITHUB_COPILOT}"
+            "uid": "edkjwc7dq7qiod"
           },
           "filters": [],
           "format": "table",
@@ -1167,7 +1127,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://raw.githubusercontent.com/kleeadrian/Grafana-CopilotMetrics/main/dummydata/Copilotdataapi.json",
+          "url": "https://api.github.com/enterprises/your-enterprise/copilot/usage",
           "url_options": {
             "data": "",
             "method": "GET"
@@ -1180,7 +1140,7 @@
     {
       "datasource": {
         "type": "yesoreyeram-infinity-datasource",
-        "uid": "${DS_GITHUB_COPILOT}"
+        "uid": "edkjwc7dq7qiod"
       },
       "fieldConfig": {
         "defaults": {
@@ -1278,7 +1238,7 @@
           "data": "",
           "datasource": {
             "type": "yesoreyeram-infinity-datasource",
-            "uid": "${DS_GITHUB_COPILOT}"
+            "uid": "edkjwc7dq7qiod"
           },
           "filters": [],
           "format": "table",
@@ -1287,7 +1247,7 @@
           "root_selector": "",
           "source": "url",
           "type": "json",
-          "url": "https://raw.githubusercontent.com/kleeadrian/Grafana-CopilotMetrics/main/dummydata/Copilotdataapi.json",
+          "url": "https://api.github.com/enterprises/your-enterprise/copilot/usage",
           "url_options": {
             "data": "",
             "method": "GET"
@@ -1311,8 +1271,8 @@
   "timeRangeUpdatedDuringEditOrView": false,
   "timepicker": {},
   "timezone": "browser",
-  "title": "Co-pilot Sample",
+  "title": "Copilot Dashboard",
   "uid": "bdk9wxug71ptsd",
-  "version": 40,
+  "version": 5,
   "weekStart": ""
 }

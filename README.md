@@ -49,37 +49,20 @@ Save the secret and don't expose it!
 - Go to the Authentication tab and paste your GitHub token in Bearer Token
 - Add 'https://api.github.com' as allowed hosts
 - Click Save and Test
-- Navigate to the left hand menu ---> Dashboards ---> New ----> Import ----> Paste/Upload the copilotsample.json contents into the screen
+- Open copilotsample.json file and replace all occurences of `your-org` and `your-enterprise` with your GitHub organisation and eneterprise name
+- Navigate to the left hand menu ---> Dashboards ---> New ----> Import
+- Paste the contents of copilotsample.json into the screen. Alternatively, upload the whole file
 - Select the Data source you created earlier
 - VOILA! Your dashboard is here
 
-**Note:** You'll need to change the URL of each panel to the specified API endpoints above. Do this by going to the top right hand corner of each Panel --> Edit --> change URL... or follow the instructions under the JSON template edit subheading
+**Note:** If you haven't updated `your-org` and `your-enterprise` with your GitHub organisation and eneterprise name earlier, you'll need to change the URL of each panel to the relevant API endpoints above. Do this by going to the top right hand corner of each Panel --> Edit --> change URL... or follow the instructions under the JSON template edit subheading
 
 <img width="352" alt="image" src="https://github.com/kleeadrian/Grafana-CopilotMetrics/assets/22606299/1adb9bf5-5b06-4198-8dfb-e38ed1c9849a">
 
-### Json template edits
-The current .json file contains the template of the dashboard. It uses test sample data(same as the GitHub API response) which I've exported into a .json file which is located in the dummydata folder. 
-The following lines of code are the ones that need to be changed in the .json file to your Enterprise/Organisation API Endpoint
-
-Change the URL's in the following lines to your [Organisation API Endpoint](https://docs.github.com/en/rest/copilot/copilot-user-management?apiVersion=2022-11-28)
-```
-162
-413
-```
-Change the URL's in the following lines to your [Enterprise API Endpoint](https://docs.github.com/en/rest/copilot/copilot-usage?apiVersion=2022-11-28#get-a-summary-of-copilot-usage-for-enterprise-members)
-```
-254
-536
-685
-831
-998
-1170
-1290
-```
 
 Metrics ideas obtained from https://resources.github.com/learn/pathways/copilot/essentials/measuring-the-impact-of-github-copilot/ 
 
-Shoutout to @andrekolodockha and @benksmilie for the ideas
+Shoutout to @andrekolodochka and @benksmillie for the ideas
 
 # Contact Info
 Feel free to contact me to discuss any issues, questions, or comments.
